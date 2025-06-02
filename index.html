@@ -18,75 +18,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="./main.js" defer></script>
-    <title>Quick List</title>
+  <title>Quick List</title>
 </head>
 <body>
-    <header>
-        <img src="./assets/logo.png" alt="Logo quicklist">
-        <button>
-           <i class="ph ph-arrow-left"></i>
-           Voltar
-        </button>
-        <h1>Compras da semana</h1>
-    </header>
+   <header>
+    <img src="./assets/logo.png" alt="Logo quicklist">
+     <button>
+      <i class="ph ph-arrow-left"></i>
+      Voltar
+     </button>
+     <h1>Compras da semana</h1>
+   </header>
 
-    <main>
-        <section class="add-item">
-            <input type="text" placeholder="Adicione um novo item" id="item">
-            <button onclick="addItem()">Adicionar item</button>
-        </section>
+   <main>
+      <section class="add-item">
+       <input type="text" placeholder="Adicione um novo item" id="item">
+       <button onclick="addItem()">Adicionar item</button>
+      </section>
 
-        <section class="list">
-            <div class="item">
-                <div>
-                    <input type="checkbox" name="list" id="item-1">
-                     <div class="custom-checkbox">
-                        <img src="./assets/checked.svg" alt="checked">
-                     </div>
-                     <label for="item-1">Maçã</label>
-                  </div>
-
-                  <button>
-                    <img src="./assets/trash-icon.svg" alt="trash">
-                  </button>
-
-                     <div class="item">
-                <div>
-                    <input type="checkbox" name="list" id="item-2">
-                     <div class="custom-checkbox">
-                        <img src="./assets/checked.svg" alt="checked">
-                     </div>
-                     <label for="item-2">Melancia</label>
-                  </div>
-
-                  <button>
-                    <img src="./assets/trash-icon.svg" alt="trash">
-                  </button>
-
-                     <div class="item">
-                <div>
-                    <input type="checkbox" name="list" id="item-3">
-                     <div class="custom-checkbox">
-                        <img src="./assets/checked.svg" alt="checked">
-                     </div>
-                     <label for="item-3">Melão</label>
-                  </div>
-
-                  <button>
-                    <img src="./assets/trash-icon.svg" alt="trash">
-                  </button>
-            </div>
-        </section>
+        <section class="list"></section>
 
         <div class="warning hide-warning">
-            <div>
-                <i class="ph ph-warning-circle ph-fill"></i>
-                <span>O item foi removido da lista</span>
-            </div>
-            <button>
-               <i class="ph ph-x"></i>
-            </button>
+          <div>
+            <i class="ph ph-warning-circle ph-fill"></i>
+            <span>O item foi removido da lista</span>
+          </div>
+
+          <button>
+             <i class="ph ph-x"></i>
+          </button>
         </div>
-    </main>
+   </main>
 </body>
 </html>
